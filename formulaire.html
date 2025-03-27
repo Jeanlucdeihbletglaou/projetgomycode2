@@ -1,0 +1,67 @@
+<u><p>Merci de remplir ce formulaire</p></u>
+<form action="page_de_traitement.php" method="post"></form>
+<p>Le formulaire de notre site_web</p>
+<!-- Les inputs -->
+<p>
+    <label for="nom">Votre nom</label>
+    <input type="text" name="nom" id="nom"/> 
+</p>
+    <label for="prenom"> Votre prenom></label>
+    <input type="text" name="prenom" id=  "prenom" placeholder="prenom 
+    sur 8 let."size="20" maxlength="8" /> 
+
+<!-- Input date de naissance -->
+<p>
+    <label for="date">Votre date de naissance</label>
+    <input type="date" name="date de naissance" id="date"/> 
+</p> 
+
+<!-- Input email -->
+<p>
+    <label for="email">email professionnel</label>
+    <input type="email" name="email" id="email"/> 
+</p>
+
+<!-- Les cases à cocher -->
+<p>
+    <label  for="leNom">cocher si vous êtes satisfait</label>
+    <input  type= "checkbox" name= "leNom" id= "leNom" checked/> 
+</p> 
+
+<!-- On peut mettre du texte après le formulaire -->
+<p>Liste deroulante pour le lieu de la livraison</p>
+
+
+    <!-- Liste déroulante plus complexe -->
+    <form method="post" action= "page_de_Traitement.php">  
+        <p> 
+        <label  for= "dept">Votre commune</label><br /> 
+        <select name="dept" id="dept"> 
+        <optgroup label=”Abidjan"> 
+        <option  value="06">Cocody</option> 
+        <option  value="83">Treichville</option> 
+        <option  value="83">Bingerville</option> 
+        <option  value="83">Abobo</option> 
+        <option  value="83">Marcory</option> 
+        <option  value="83">Plateau</option> 
+        <option  value="83">Port Bouet</option> 
+        </optgroup>  
+        <optgroup label=”lintérieur">…..</optgroup>  
+        </select>  
+        </p> 
+        </form> 
+
+
+<!-- Les Commentaires -->
+<form method="post" action= "page_de_Traitement.php">  
+    <p> 
+    <label for="cours">Expliquez en quelque lignes pourquoi vous vous êtes inscrits à la formation WEB Developpemnt chez gomycode ? ></label>  
+      <br>
+      <br>
+        <textarea name="cours"id= "cours" rows="8" cols="50"> 
+    Expliquez en quelque lignes pourquoi vous vous êtes inscrits à la formation WEB Developpemnt chez gomycode ? 
+    </textarea>  
+    </p> 
+    </form>
+
+    <input type= "submit" value= "envoyer" />
